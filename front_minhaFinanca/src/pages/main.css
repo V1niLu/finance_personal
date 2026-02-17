@@ -17,58 +17,197 @@ body{
     height: auto;
 }
 
-.cabecalho{
-    margin-top: 60px;
-    font-size: x-large;
-    text-align: center;
-}
-
-.infos{
-    gap: 20px;
-    align-items: center;
-    width: 90vw;
-    margin: 50px auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.conteudo{
-    height: 500px;
-    background-color: yellow;
-    margin: auto;
-    width: 600px;
-    display: flex;
-}
-
-.relatorio{
-    height: auto;
-    margin: auto;
+.botao{
     width: 90%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    margin: auto;
 }
 
-.relatorio ul{
-    list-style: none;
+.topHAberto{
+   background-color: #fff;
+   width: 100%;
+   height: 20%;
+   border-radius: 5px;
+   transition: all 0.3s ease; 
+}
+
+.midHAberto{
+   background-color: #fff;
+   width: 100%;
+   height: 20%;
+   border-radius: 5px;
+   transition: all 0.3s ease; 
+}
+
+.botHAberto{
+   background-color: #fff;
+   width: 100%;
+   height: 20%;
+   border-radius: 5px;
+   transition: all 0.3s ease; 
+}
+
+.topHFechado{
+   background-color: #fff;
+   width: 100%;
+   height: 20%;
+   border-radius: 5px;
+   transition: all 0.3s ease; 
+}
+
+.midHFechado{
+   background-color: #fff;
+   width: 70%;
+   height: 20%;
+   border-radius: 5px;
+   transition: all 0.3s ease; 
+}
+
+.botHFechado{
+   background-color: #fff;
+   width: 40%;
+   height: 20%;
+   border-radius: 5px;
+   transition: all 0.3s ease; 
+}
+
+.botaoFechar{
+    top: 15px;
+    left: 15px;
+    width: 3%;
+    height: 5vh;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: fixed;
+    transition: all 0.3s ease;  
+}
+
+.botaoAbrir{
+    top: 15px;
+    left: 15px;
+    width: 3%;
+    height: 5vh;
+    background-color: #1b1b1b;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: fixed;
+    transition: all 0.3s ease;
+}
+
+.fechar{
     display: flex;
     gap: 50px;
-    margin-left: -50px;
+    background-color: #272727;
+    left: 0;
+    width: 7%;
+    height: 100vh;
+    position: fixed;
+    transition: all 0.3s ease;
+    align-items: center; 
 }
 
-.relatorio ul li{
-    font-size: large;
-    font-weight: bold;
+.fechar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 20px;
 }
+
+.fechar li{
+    list-style: none;
+    color: white;
+    font-size: 2em;
+}
+
+.fechar li span{
+    display: none;
+    transition: all 0.3s ease;
+}
+
+
+.abrir{
+    display: flex;
+    gap: 50px;
+    background-color: #272727;
+    left: 0;
+    width: 18%;
+    height: 100vh;
+    position: fixed;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.abrir ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 20px;
+}
+
+.abrir li{
+    list-style: none;
+    color: white;
+    font-size: 2em;
+}
+
+.abrir li div{
+    display: inline-flex;
+    gap: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.abrir li div:hover{
+    font-weight: bold;
+    color: #039ffa;
+}
+
+.abrir span{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.conteudoFechado{
+    transition: all 0.3s ease;
+    width: 82%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.conteudoAberto{
+    transition: all 0.3s ease;
+    width: 93%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.imgLogo{
+    width: 25%;
+    display: flex;
+    margin: -180px auto 0 auto;
+}
+
 
 @media screen and (max-width: 1450px){
-    .infos{
-        background-color: red;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .conteudo{
-        background-color: blue;
-        width: 500px;
-    }
+    
     
 }
