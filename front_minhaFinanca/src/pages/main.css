@@ -174,7 +174,7 @@ body{
 
 .abrir li div:hover{
     font-weight: bold;
-    color: #039ffa;
+    color: royalblue;
 }
 
 .abrir span{
@@ -206,6 +206,96 @@ body{
     margin: -180px auto 0 auto;
 }
 
+.valores{
+    display: flex;
+    gap: 20px;
+    margin: -130px auto 0 auto;
+    width: 90%;
+    height: auto;
+}
+
+.infos{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: -130px auto 0 auto;
+    width: 20%;
+    height: 180px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: #27272715 0px 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.menu img{
+    width: 60px;
+    margin-top: -10px;
+    color: white
+}
+
+.vermelho{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
+.amarelo{
+    color: goldenrod;
+}
+
+.infos h2{
+    font-size: 2.5em;
+}
+
+.infos p{
+    font-size: 1.8em;
+}
+
+.infos:hover{
+    background-color: royalblue;
+    color: white;
+}
+
+.historico{
+    background-color: white;
+    width: 86%;
+    height: auto;
+    margin: 50px auto 0 auto;
+    border-radius: 10px;
+    box-shadow: #27272715 0px 5px 15px;
+}
+
+.historico table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.historico table thead th{
+    background-color: royalblue;
+    padding: 10px;
+    font-size: 1.5em;
+    color: white;
+    gap: 10px;
+    border-left: #f0f0f0 5px solid;
+}
+
+.historico tbody{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+.historico tbody td{
+    border-bottom: #f0f0f0 5px solid;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
 
 @media screen and (max-width: 1450px){
     
